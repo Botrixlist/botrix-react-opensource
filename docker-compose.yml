@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  web:
+  core:
     build: .
     ports: 
         - 6379:6369
