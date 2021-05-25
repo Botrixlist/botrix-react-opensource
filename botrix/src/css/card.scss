@@ -1,0 +1,111 @@
+.bot-card{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-position: center;
+    background-position: cove;
+    transition: 0.3s all ease;
+    z-index: 2;
+    background-color: rgb(27, 27, 27);
+
+    .banner-image{
+        position: relative;
+        height: 200px;
+        width:300px;
+        border-radius: 4px;
+        margin-left: -10px;
+        margin-top: -10px;
+        background-position: center;
+        background-size: cover;
+        z-index: 3 !important;
+    }
+
+    .background-fade{
+        position: absolute;
+        z-index: 2 !important;
+        height: 100%;
+        overflow-x: hidden !important;
+        overflow-y: hidden;
+        width:300px;
+        
+        top: 0;
+        left: 0;
+        background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,1))
+    }
+
+
+    &:hover {
+        scale: 1.05;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        color: white;
+    }
+
+
+}
+
+.bot-info{ 
+    margin-top: 10px;
+    p {
+        font-size: 18px !important;
+    }
+
+    .stats-container{
+        float: right;
+        margin-top: -40px;
+
+        .votes-container {
+            margin-right: 20px;
+            float: left;
+            p {
+                font-size: 16px !important;
+                float: right;
+            }
+
+            img {
+                height: 20px;
+                float: left;
+                margin-top: 4px;
+                margin-right: 10px;
+            }
+        }
+        .server-container {
+            float: right;
+            p {
+                font-size: 16px !important;
+                float: right;
+            }
+
+            img {
+                height: 20px;
+                float: left;
+                margin-top: 4px;
+                margin-right: 10px;
+            }
+        }
+
+    }
+
+    .description{
+        p {
+            font-size: 16px !important;
+            font-weight: 400 !important;
+        }
+        height: 100px;
+        overflow-y: hidden;
+    }
+}
+
+.icon-holder{
+    position: relative;
+    margin-top: -40px;
+    z-index: 4 !important;
+    > img {
+        height: 70px;
+        border-radius: 50%;
+    }
+}

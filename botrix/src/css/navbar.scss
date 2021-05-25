@@ -1,0 +1,52 @@
+a {
+  color: white;
+}
+
+header {
+  display: flex;
+  z-index: 10;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+    height: 50px;
+  }
+
+  .nav__links {
+    list-style: none;
+
+    > li {
+      display: inline-block;
+      padding: 0px 3px;
+      margin-top: 13px;
+
+      > a {
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+        border-radius: 3px;
+        padding: 15px 20px;
+
+        &:hover {
+          color: white;
+          background-color: rgb(44, 44, 44);
+        }
+      }
+    }
+  }
+
+  .login-button {
+    margin-left: 10px;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: rgb(44, 44, 44);
+    }
+  }
+}

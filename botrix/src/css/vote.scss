@@ -1,0 +1,58 @@
+.voting-container {
+    position: relative;
+    padding: 100px;
+
+
+    .bot{
+        text-align: center;
+        margin-top: 100px
+    }
+    .bot-logo {
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .bot-name{
+        margin-top: 10px;
+    }
+    .vote-button{
+        margin-top: 20px;
+        width: 200px;
+        height: 45px;
+        border: none;
+        border-radius: 7px;
+        background-color: rgb(197, 4, 197);
+        color: white;
+    }
+}
+
+.explode{
+    background-color: rgb(197, 4, 197);
+    width: 100%;
+}
+
+.bot-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+
+
+.uwu-explosion{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #7636C9;   
+}
+
+.thanks{
+    text-align: center;
+    margin-top: 100px;
+}

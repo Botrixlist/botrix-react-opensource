@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+/* vars  OLD BG: $bg-color: #303030; */
+$bg-color: #100f13;
+$secondary-color: #7636c9;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: $bg-color !important;
+  color: white !important;
+}
+
+#header-box {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  border: 0.5px solid;
+}
+
+.card-arrays {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.center-of-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+  > img {
+    height: 100px;
+  }
+}
+
+.form-container {
+  width: 100%;
+  text-align: center;
+}
+
+.form-input {
+  padding: 10px;
+  width: 70%;
+  background: transparent;
+  border: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/*
+.form-input {
+  padding: 10px;
+  width: 70%; 
+  background: transparent;
+  border: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+
+.form-input {
+  padding: 10px;
+  width: 70%; 
+  background: #2c2c2c;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid grey;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+
+.form-input:focus {
+  border: 1px solid $secondary-color;
+}
+*/
+
+.text-requirements {
+  text-align: left !important;
+  color: grey;
+
+  &:nth-child(n + 2) {
+    margin-top: -10px;
+  }
+
+  * {
+    color: grey;
+  }
+}
+
+.requirements {
+  margin-left: 16%;
+  margin-top: 10px;
+}
+
+.description {
+  textarea {
+    width: 70%;
+    height: 200px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: rgb(39, 39, 39);
+  }
+}
+
+form {
+  margin-bottom: 300px;
+}
+
+.submit-button {
+  font-size: 400;
+  padding: 5px 20px;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: #7636c9;
+}
+
+.error-container {
+  text-align: left;
+  background-color: rgba(167, 25, 25, 0.336);
+  border-left: 5px solid red;
+  margin-bottom: 30px;
+  .error-reason {
+    padding: 20px 40px;
+  }
+}
+
+.error {
+  text-align: center;
+  margin-top: 100px;
+
+  .code {
+    font-size: 72px;
+    color: #4718c9;
+  }
+}
+
+/* TAGS */
+
+.tag {
+  position: relative;
+  float: left;
+  text-align: center;
+  max-width: 150px;
+  max-height: 43px;
+  padding: 10px 10px;
+  margin: 0;
+  box-shadow: 0 0 0 0 #3e00e9, 0.5rem 0.5rem 30px mix(black, #b803a9, 50%);
+  margin-right: 15px;
+  background-color: #b803a9;
+  border-radius: 9px;
+}

@@ -1,0 +1,341 @@
+$button: #366EF1;
+
+
+
+
+.bot-page {
+    display: block;
+    width: 1400px;
+    margin: auto;
+    background-color: rgb(20, 20, 20);
+}
+
+.banner-holder{
+   img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+   } 
+}
+
+.pfp-holder {
+    margin-top: -65px;
+    margin-left: 30px;
+
+    .bot-icon {
+        border-radius: 50%;
+        height: 115px;
+    }
+}
+
+
+.bot-info-holder{
+    margin-left: 25px;
+    margin-top: 20px;
+    
+    h1 {
+        font-size: 400;
+        font-size: 32px;
+    }
+
+    .descrption-holder {
+        width: 600px !important;
+    }
+}
+
+
+.big-button {
+    font-size: 400;
+    padding: 5px 20px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: $button;
+}
+
+
+.vote-button{
+    margin-bottom: 10px;
+}
+
+.button-holders{
+    float: right;
+    margin-top: -120px;
+    margin-right: 30px;
+}
+
+.bot-spacer{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}   
+
+
+.bot-long {
+    width: 75%;
+    background-color: rgb(29, 29, 29);
+    padding: 30px;
+    margin: 30px;
+    margin-bottom: 30px; 
+    overflow-x: hidden;
+
+    img {
+        max-width: 100% !important;
+    }
+}
+
+Link {
+    color: white;
+}
+
+.sidebar-bot{
+    float: right;
+    margin-right: 25px;
+    width: 275px;
+    .stats-holder{
+        height: 45px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid rgb(64, 64, 65);
+        background-color: rgb(43, 43, 43);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background-color: rgb(37, 37, 37);
+            color: white;
+            .icon-holder-stats {
+                background-color: rgb(37, 37, 37);
+            }
+        }
+
+
+
+        &:nth-child(n + 1){
+            margin-top: 10px;
+        }
+
+        .icon-holder-stats{
+            transition: all 0.3s ease;
+            margin: 0;
+            margin-top: -10px;
+            margin-left: -10px;
+            height:43px;
+            width: 50px;
+            float: left;
+            background-color: rgb(36, 36, 36);
+            padding: 5px;
+            text-align: center;
+            img {
+                margin-top: 4px;
+                height: 20px;   
+            }
+        }
+
+        .text-holder{
+            text-align: left;
+            float: left;
+            margin-left: 10px !important;
+            margin-top: 0px;
+            p {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+
+/* MEDIUM SIZED SCREENS */
+@media (max-width: 1400px) {
+
+
+    .bot-page {
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(20, 20, 20);
+    }
+
+    .sidebar-bot{
+        float: right;
+        margin-right: 1%;
+        width: 20%;
+        .stats-holder{
+            height: 45px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid rgb(64, 64, 65);
+            background-color: rgb(43, 43, 43);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: rgb(37, 37, 37);
+                color: white;
+                .icon-holder-stats {
+                    background-color: rgb(37, 37, 37);
+                }
+            }
+    
+    
+    
+            &:nth-child(n + 1){
+                margin-top: 10px;
+            }
+    
+            .icon-holder-stats{
+                transition: all 0.3s ease;
+                margin: 0;
+                margin-top: -10px;
+                margin-left: -10px;
+                height:43px;
+                width: 50px;
+                float: left;
+                background-color: rgb(36, 36, 36);
+                padding: 5px;
+                text-align: center;
+                img {
+                    margin-top: 4px;
+                    height: 20px;   
+                }
+            }
+    
+            .text-holder{
+                text-align: left;
+                float: left;
+                margin-left: 10px !important;
+                margin-top: 0px;
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* SMALL SIZED SCREENS */
+
+@media (max-width: 850px) {
+
+
+    .bot-info-holder{
+        margin-left: 25px;
+        margin-top: 20px;
+
+        h1 {
+            font-size: 400;
+            font-size: 32px;
+        }
+    
+        .descrption-holder {
+            width: 100% !important;
+        }
+    }
+
+    .bot-header{
+        height: 600px;
+    }
+
+    .button-holders{
+        margin-top: 15px;
+        float: left;
+        margin-left: 30px;
+        width: 85%;
+        .big-button {
+            font-size: 400;
+            padding: 5px 20px;
+            width: 100%;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            background-color: $button;
+        }
+        
+    }
+
+    .bot-long {
+        display: block;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre-wrap;
+        margin: 0;
+        margin-top: -20px;
+        margin-bottom: 30px; 
+        img {
+            max-width: 100% !important;
+        }
+    }
+    
+
+    .sidebar-bot{
+        display: block;
+        margin-left: 5%;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        float: left;
+        width: 90%;
+        .stats-holder{
+            height: 45px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid rgb(64, 64, 65);
+            background-color: rgb(43, 43, 43);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: rgb(37, 37, 37);
+                color: white;
+                .icon-holder-stats {
+                    background-color: rgb(37, 37, 37);
+                }
+            }
+    
+    
+    
+            &:nth-child(n + 1){
+                margin-top: 10px;
+            }
+    
+            .icon-holder-stats{
+                transition: all 0.3s ease;
+                margin: 0;
+                margin-top: -10px;
+                margin-left: -10px;
+                height:43px;
+                width: 50px;
+                float: left;
+                background-color: rgb(36, 36, 36);
+                padding: 5px;
+                text-align: center;
+                img {
+                    margin-top: 4px;
+                    height: 20px;   
+                }
+            }
+    
+            .text-holder{
+                text-align: left;
+                float: left;
+                margin-left: 10px !important;
+                margin-top: 0px;
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    
+}
