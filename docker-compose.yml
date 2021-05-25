@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  core:
+    build: .
+    ports: 
+        - 6379:6369
+    expose:
+        - 3001
