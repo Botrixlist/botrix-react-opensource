@@ -3,6 +3,6 @@ services:
   core:
     build: .
     ports: 
-        - 6379:6369
+        - 6379:6379
     expose:
         - 3001
